@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Highlights | Hemel's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+      }
+      .logo {
+        flex: 1;
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+      nav {
+        flex: 3;
+        display: flex;
+        justify-content: center;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+      }
+      nav a {
+        text-decoration: none;
+        color: inherit;
+        transition: color 0.3s;
+      }
+      nav a:hover {
+        color: #3498db;
+      }
+      .footer-info {
+        margin-left: 3rem;
+      }
+      .highlight-content {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 3rem;
+      }
+      .highlight-content img {
+        width: 50%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      .highlight-text {
+        width: 50%;
+      }
+      .reverse {
+        flex-direction: row-reverse;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 2rem 0;
+      }
+      table th, table td {
+        padding: 1rem;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+      table th {
+        background-color: #f5f5f5;
+      }
+      .youtuber-list {
+        columns: 2;
+        column-gap: 2rem;
+      }
+      .youtuber-list li {
+        margin-bottom: 0.5rem;
+        break-inside: avoid;
+      }
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <div class="logo">Hemel.INTP</div>
+      <nav>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#education">Education</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="highlights.html">Highlights</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main style="padding: 2rem">
+      <section class="highlights-section">
+        <h1 style="font-size: 2.5rem;margin-top:3rem; margin-bottom: 1rem;">My Highlights</h1>
+        <p class="section-description" style="font-size: 1.2rem; margin-bottom: 3rem; color: #666;">
+          Beyond coding and academics, here's what makes me who I am.
+        </p>
+
+        <div class="highlights-container">
+          <!-- Bodybuilding Section -->
+          <article class="highlight-card" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 2rem; color: #333;">Bodybuilding Passion</h2>
+            <div class="highlight-content">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/autobazar-e55c7.firebasestorage.app/o/autoBazar%2FScreenshot%202025-07-07%20at%2011.30.31%E2%80%AFPM.png?alt=media&token=9d61f193-559a-4a73-b277-cca90b0f859c"
+                alt="Bodybuilding"
+              />
+              <div class="highlight-text">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">My Fitness Journey</h3>
+                <p style="line-height: 1.6; margin-bottom: 1rem;">
+                  Bodybuilding has been a transformative part of my life, teaching me discipline, patience, 
+                  and the power of consistency. I've been training seriously for 3 years, focusing on:
+                </p>
+                <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+                  <li>Progressive overload techniques</li>
+                  <li>Nutrition and macro tracking</li>
+                  <li>Powerlifting fundamentals (Squat, Bench, Deadlift)</li>
+                  <li>Body recomposition strategies</li>
+                </ul>
+                <p style="line-height: 1.6;">
+                  My current personal records: 180kg squat, 120kg bench press, and 220kg deadlift.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Biking Section -->
+          <article class="highlight-card" style="margin-bottom: 4rem;">
+            <h2 style="font-size: 2rem; margin-bottom: 2rem; color: #333;">Biking Adventures</h2>
+            <div class="highlight-content reverse">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/autobazar-e55c7.firebasestorage.app/o/autoBazar%2FScreenshot%202025-07-07%20at%2011.24.56%E2%80%AFPM.png?alt=media&token=ac4287c5-d1b9-4454-a21a-ae851fd25158"
+                alt="Biking"
+              />
+              <div class="highlight-text">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">On Two Wheels</h3>
+                <p style="line-height: 1.6; margin-bottom: 1rem;">
+                  Motorcycles are my passion and escape. I own a Yamaha R15 and frequently go on long rides. 
+                  What draws me to biking:
+                </p>
+                <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+                  <li>The sense of freedom on open roads</li>
+                  <li>The mechanical beauty of motorcycles</li>
+                  <li>The biking community and culture</li>
+                  <li>Adventure touring and exploring new places</li>
+                </ul>
+                <p style="line-height: 1.6;">
+                  My dream bikes: Ducati Panigale V4 and BMW R 1250 GS Adventure.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Top YouTubers Section -->
+          <article class="highlight-card">
+            <h2 style="font-size: 2rem; margin-bottom: 2rem; color: #333;">My Top 10 Fitness YouTubers</h2>
+            <div class="highlight-content">
+              <div style="width: 100%;">
+                <p style="margin-bottom: 1.5rem;">Here are my favorite fitness YouTubers who inspire my training:</p>
+<ol class="youtuber-list">
+    <li><a href="https://www.youtube.com/@JeffNippard" target="_blank" style="text-decoration: none; color: inherit;">Jeff Nippard</a></li>
+    <li><a href="https://www.youtube.com/@athleanx" target="_blank" style="text-decoration: none; color: inherit;">Athlean-X</a></li>
+    <li><a href="https://www.youtube.com/@GregDoucette" target="_blank" style="text-decoration: none; color: inherit;">Greg Doucette</a></li>
+    <li><a href="https://www.youtube.com/@WillTennyson" target="_blank" style="text-decoration: none; color: inherit;">Will Tennyson</a></li>
+    <li><a href="https://www.youtube.com/@JeremyEthier" target="_blank" style="text-decoration: none; color: inherit;">Jeremy Ethier</a></li>
+    <li><a href="https://www.youtube.com/@NoelDeyzel" target="_blank" style="text-decoration: none; color: inherit;">Noel Deyzel</a></li>
+    <li><a href="https://www.youtube.com/@RenaissancePeriodization" target="_blank" style="text-decoration: none; color: inherit;">Mike Israetel</a></li>
+    <li><a href="https://www.youtube.com/@SeanNalewanyj" target="_blank" style="text-decoration: none; color: inherit;">Sean Nalewanyj</a></li>
+    <li><a href="https://www.youtube.com/@ScottHermanFitness" target="_blank" style="text-decoration: none; color: inherit;">Scott Herman</a></li>
+    <li><a href="https://www.youtube.com/@BuffDudes" target="_blank" style="text-decoration: none; color: inherit;">Buff Dudes</a></li>
+</ol>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>Connect With Me</h3>
+          <p>
+            Feel free to reach out for collaborations or just a friendly hello!
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="highlights.html">Highlights</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Hemel™ © 2025 Portfolio. All rights reserved.</p>
+        <p id="page-info"></p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
