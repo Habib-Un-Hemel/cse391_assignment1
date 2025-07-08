@@ -4,16 +4,13 @@
   --secondary-color: #2ecc71;
   --dark-color: #2c3e50;
   --light-color: #ecf0f1;
-  --danger-color: #e74c3c;
-  --success-color: #2ecc71;
-  --warning-color: #f39c12;
   --info-color: #3498db;
   --white: #fff;
   --black: #000;
   --gray: #95a5a6;
   --dark-gray: #7f8c8d;
   --light-gray: #bdc3c7;
-  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   --transition: all 0.3s ease;
 }
 
@@ -26,9 +23,8 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: var(--dark-color);
-  background-color: var(--white);
+  line-height: 1.6; 
+  /* * */
 }
 
 a {
@@ -38,12 +34,13 @@ a {
 }
 
 a:hover {
-  color: var(--secondary-color);
+  color: var(--secondary-color); 
+  /* green */
 }
 
 img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 ul {
@@ -56,6 +53,8 @@ ul {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  /* top bottom, left write */
+  /*  */
 }
 
 .btn {
@@ -389,7 +388,7 @@ table tr:hover {
 }
 
 .skill-category:hover {
-  transform: translateY(-10px);
+  transform: translateY(10px);
 }
 
 .skill-category h3 {
@@ -412,16 +411,10 @@ table tr:hover {
 
 .skill-category ul li {
   margin-bottom: 10px;
-  padding-left: 20px;
+  padding-left: 10px;
   position: relative;
 }
 
-.skill-category ul li::before {
-  content: "▹";
-  position: absolute;
-  left: 0;
-  color: var(--primary-color);
-}
 
 /* Projects Section */
 .projects-container {
