@@ -35,71 +35,34 @@ document.addEventListener("DOMContentLoaded", function () {
     icon.classList.add("fa-sun");
   }
 
-  // Smooth scrolling for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
+ 
+  // // Highlight active section in navigation
+  // const sections = document.querySelectorAll("section[id]");
+  // const navLinks = document.querySelectorAll("nav ul li a");
 
-      const targetId = this.getAttribute("href");
-      if (targetId === "#") return;
+  // window.addEventListener("scroll", function () {
+  //   let current = "";
 
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        const headerHeight = document.querySelector("header").offsetHeight;
-        const targetPosition =
-          targetElement.getBoundingClientRect().top +
-          window.pageYOffset -
-          headerHeight;
+  //   sections.forEach((section) => {
+  //     const sectionTop = section.offsetTop;
+  //     const sectionHeight = section.clientHeight;
 
-        window.scrollTo({
-          top: targetPosition,
-          behavior: "smooth",
-        });
+  //     if (pageYOffset >= sectionTop - 300) {
+  //       current = section.getAttribute("id");
+  //     }
+  //   });
 
-        // Update URL without page jump
-        if (history.pushState) {
-          history.pushState(null, null, targetId);
-        } else {
-          location.hash = targetId;
-        }
-      }
-    });
-  });
+  //   navLinks.forEach((link) => {
+  //     link.classList.remove("active");
+  //     if (
+  //       link.getAttribute("href") === `#${current}` ||
+  //       (link.getAttribute("href").includes(current) && current !== "")
+  //     ) {
+  //       link.classList.add("active");
+  //     }
+  //   });
+  // });
 
-  // Highlight active section in navigation
-  const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll("nav ul li a");
 
-  window.addEventListener("scroll", function () {
-    let current = "";
 
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-
-      if (pageYOffset >= sectionTop - 300) {
-        current = section.getAttribute("id");
-      }
-    });
-
-    navLinks.forEach((link) => {
-      link.classList.remove("active");
-      if (
-        link.getAttribute("href") === `#${current}` ||
-        (link.getAttribute("href").includes(current) && current !== "")
-      ) {
-        link.classList.add("active");
-      }
-    });
-  });
-
-  // Table row hover effect
-  const tableRows = document.querySelectorAll("table tr");
-  tableRows.forEach((row) => {
-    row.addEventListener("mouseenter", function () {
-      this.style.transition = "background 0.3s ease";
-    });
-  });
-
-  // Mobile menu toggle (will be added in responsive design)
 });
