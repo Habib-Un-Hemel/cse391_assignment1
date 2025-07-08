@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Create dark mode toggle
+
+
+  // Create dark mode toggle btn
   const toggle = document.createElement("div");
   toggle.className = "dark-mode-toggle";
   toggle.innerHTML = `<i class="fas ${
@@ -7,10 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }"></i>`;
   document.body.appendChild(toggle);
 
+
   // Apply saved preference
   if (localStorage.getItem("darkMode") === "enabled") {
     document.body.classList.add("dark-mode");
   }
+  
 
   // Toggle dark mode
   toggle.onclick = () => {
